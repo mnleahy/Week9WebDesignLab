@@ -23,10 +23,12 @@ Bonus: The computer should change their guess each time
 function check(){
     var userPick = document.querySelector('input[name="game"]:checked').value;
     var compPick = Math.floor(Math.random() * 3)+1;
+    let text = "";
     console.log(compPick);
 
-
     for(i=0;i<3;i=i+1){
+        if (i == 2) break;
+        text += i + "You have had 3 attempts. The game is over.";
         if(userPick==compPick){
             document.getElementById("rps").innerHTML="Computer picked no."+compPick+", you draw.";
         }
