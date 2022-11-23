@@ -28,7 +28,7 @@ function check(){
 
     for(i=0;i<3;i=i+1){
         if (i == 2) break;
-        text += i + "You have had 3 attempts. The game is over.";
+        text = "You have had 3 attempts. The game is over.";
         if(userPick==compPick){
             document.getElementById("rps").innerHTML="Computer picked no."+compPick+", you draw.";
         }
