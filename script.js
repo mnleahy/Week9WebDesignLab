@@ -26,37 +26,37 @@ function check(){
     console.log(compPick);
 
 
-    for(var i=0;i<2;i=i+1){
+    for(var i=0;i<3;i=i+1){
         if(userPick==compPick){
-            document.getElementById("rps").innerHTML="Computer picked no."+compPick+", You draw.";
+            document.getElementById("rps").innerHTML="Computer picked no."+compPick+", you draw.";
         }
         //user picks rock
         else if(userPick==1){
             if(compPick==2){
-                document.getElementById("rps").innerHTML="Computer picked number "+compPick+", You lose.";
+                document.getElementById("rps").innerHTML="Computer picked number "+compPick+", you lose.";
             }
             else{
-                document.getElementById("rps").innerHTML="Computer picked number "+compPick+", You win. The game stops.";
+                document.getElementById("rps").innerHTML="Computer picked number "+compPick+", you win. The game stops.";
                 hide();
             }
         }
         //user picks paper
         else if(userPick==2){
             if(compPick==3){
-                document.getElementById("rps").innerHTML="Computer picked number "+compPick+", You lose.";
+                document.getElementById("rps").innerHTML="Computer picked number "+compPick+", you lose.";
             }
             else{
-                document.getElementById("rps").innerHTML="Computer picked number "+compPick+", You win. The game stops.";
+                document.getElementById("rps").innerHTML="Computer picked number "+compPick+", you win. The game stops.";
                 hide();
             }
         }
         //user picks scissors
         else if(userPick==3){
             if(compPick==1){
-                document.getElementById("rps").innerHTML="Computer picked number "+compPick+", You lose.";
+                document.getElementById("rps").innerHTML="Computer picked number "+compPick+", you lose.";
             }
             else{
-                document.getElementById("rps").innerHTML="Computer picked number "+compPick+", You win. The game stops.";
+                document.getElementById("rps").innerHTML="Computer picked number "+compPick+", you win. The game stops.";
                 hide();
             }
         }
