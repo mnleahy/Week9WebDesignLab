@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Week 9 Web Design Assignment</title>
+    </head>
+
+    <body>
+        <script src="script.js"></script>
+        <!--Question 1 - 99 Bottles of Beer-->
+        <h1>99 Bottles of Beer on the Wall</h1>
+        <button onclick="beerWallLyrics()">Click for Song Lyrics</button>
+        <br>
+        <br>
+        <div id="bottles"></div>
+
+        <!--Question 2 - Rock, Paper, Scissors-->
+        <h1>Rock, Paper, Scissors!</h1>
+        <form id="rpsform" onsubmit="return false;">
+            <p>Please select an option:</p>
+        <input type="radio" name="game" id="formRps1" value="1">
+        <label for="Rock">Rock</label><br>
+        <input type="radio" name="game" id="formRps2" value="2">
+        <label for="Paper">Paper</label><br>
+        <input type="radio" name="game" id="formRps3" value="3">
+        <label for="scissors">Scissors</label>
+        <br>
+        <br>
+        <input type="submit" onclick="check()">
+        </form>
+        <br>
+        <br>
+        <div id="rps"></div>
+    </body>
+</html>
