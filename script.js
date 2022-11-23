@@ -26,7 +26,7 @@ function check(){
     console.log(compPick);
 
 
-    for(var i=0;i<3;i=i+1){
+    for(i=0;i<3;i=i+1){
         if(userPick==compPick){
             document.getElementById("rps").innerHTML="Computer picked no."+compPick+", you draw.";
         }
